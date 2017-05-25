@@ -18,10 +18,20 @@ void randomHex()
 	printf("Enter The Hex Number Length:");
 	scanf_s("%d", &hexLen);
 
-	for (i = 0; i < hexLen; i++)
-	{
-		hexNum = rand() % 10;
-		printf("%d", hexNum);
-	}
+	if (hexLen<=3)
+		for (i = 0; i < hexLen; i++)
+		{
+			hexNum = rand() % 10;
+			printf("%d", hexNum);
+		}
+	else
+			
+		for (i = 0; i < hexLen; i++)
+		{
+			hexNum = rand() % 99;
+			printf("%d", hexNum);
+		}
+
+	
 	
 }
